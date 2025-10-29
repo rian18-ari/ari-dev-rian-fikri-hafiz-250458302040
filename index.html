@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ari - Web Developer Portfolio</title>
+    <!-- Memuat Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Mengatur font default dan tampilan dasar */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117; /* Dark background similar to GitHub/modern dashboards */
+            color: #c9d1d9; /* Light text color */
+            scroll-behavior: smooth;
+        }
+        /* Custom scrollbar untuk tampilan modern */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2a3340;
+            border-radius: 4px;
+        }
+        .section-padding {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+        .project-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(100, 100, 100, 0.1), 0 4px 6px -2px rgba(100, 100, 100, 0.05);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-[#0d1117]/95 backdrop-blur-sm shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-xl font-bold text-indigo-400 hover:text-indigo-300 transition duration-150">Ari.dev</a>
+            <nav class="flex space-x-6">
+                <a href="#about" class="text-sm font-medium hover:text-indigo-400 transition duration-150">Tentang Saya</a>
+                <a href="#projects" class="text-sm font-medium hover:text-indigo-400 transition duration-150">Proyek</a>
+                <a href="#contact" class="text-sm font-medium hover:text-indigo-400 transition duration-150">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section (Pendahuluan) -->
+    <section id="hero" class="section-padding pt-24 bg-[#0d1117]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-8">
+                <img src="/asset/img/twibon 02.jpg" onerror="this.src='https://placehold.co/150x150/1f2937/ffffff?text=FOTO'" alt="Foto Profil Ari" class="mx-auto rounded-full ring-4 ring-indigo-500/50 w-32 h-38 shadow-lg">
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-4">
+                Halo, aku <span class="text-indigo-400">Ari</span>.
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 mb-8 max-w-3xl mx-auto">
+                Seorang Web Developer yang fokus pada pembuatan aplikasi web cepat, scalable, dan elegan.
+            </p>
+            <a href="#projects" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 transition duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                Lihat Karya-karyaku
+            </a>
+            <p class="mt-4 text-sm text-gray-500">Spesialisasi: Laravel, Tailwind CSS.</p>
+        </div>
+    </section>
+
+    <!-- About Me Section (Tentang Saya) -->
+    <section id="about" class="section-padding bg-gray-900 border-t border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-white mb-12">Tentang Saya</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-lg text-gray-400 space-y-4">
+                    <p>
+                        Aku percaya bahwa *clean code* dan arsitektur yang solid adalah kunci keberhasilan sebuah proyek. Aku memiliki pengalaman dalam membangun aplikasi full-stack menggunakan <a href="https://laravel.com" class="text-indigo-400">Laravel</a> untuk keamanan backend yang kuat dan <a href="https://tailwindcss.com" class="text-indigo-400">Tailwind css</a> untuk UI (User Interface) yang stylish.
+                    </p>
+                    <p>
+                        Saat ini, aku fokus meningkatkan kemampuan dalam optimasi performa dan design systems. Mari berkolaborasi dan wujudkan ide-ide digitalmu menjadi kenyataan.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-white mb-4">Keahlian Teknis</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-indigo-600/20 text-indigo-400 text-sm font-medium px-3 py-1 rounded-full shadow-lg">CSS</span>
+                        <span class="bg-indigo-600/20 text-indigo-400 text-sm font-medium px-3 py-1 rounded-full shadow-lg">HTML 5</span>
+                        <span class="bg-indigo-600/20 text-indigo-400 text-sm font-medium px-3 py-1 rounded-full shadow-lg">Laravel (PHP)</span>
+                        <span class="bg-indigo-600/20 text-indigo-400 text-sm font-medium px-3 py-1 rounded-full shadow-lg">Tailwind CSS</span>
+                        <span class="bg-indigo-600/20 text-indigo-400 text-sm font-medium px-3 py-1 rounded-full shadow-lg">MySQL/PostgreSQL</span>
+                        <span class="bg-indigo-600/20 text-indigo-400 text-sm font-medium px-3 py-1 rounded-full shadow-lg">REST API</span>
+                        <span class="bg-indigo-600/20 text-indigo-400 text-sm font-medium px-3 py-1 rounded-full shadow-lg">Git & GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section (Proyek) -->
+    <section id="projects" class="section-padding bg-[#0d1117]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-white mb-12">Proyek Pilihan</h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Project Card 1 -->
+                <div class="project-card bg-gray-800 p-6 rounded-xl shadow-2xl flex flex-col">
+                    <h3 class="text-xl font-semibold text-white mb-2">Sistem E-commerce (Laravel)</h3>
+                    <p class="text-gray-400 mb-4 flex-grow">Aplikasi E-commerce berbasis Laravel dengan manajemen inventaris yang kompleks dan integrasi pembayaran.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                         <span class="bg-emerald-600/20 text-emerald-400 text-xs px-2 py-1 rounded-full">Laravel</span>
+                         <span class="bg-emerald-600/20 text-emerald-400 text-xs px-2 py-1 rounded-full">Tailwind</span>
+                         <span class="bg-emerald-600/20 text-emerald-400 text-xs px-2 py-1 rounded-full">MySQL</span>
+                    </div>
+                    <button onclick="showProjectDetail('E-commerce', 'Proyek ini menampilkan fitur penuh dari Laravel, termasuk otentikasi, manajemen CRUD, dan sistem keranjang belanja asinkron.')" class="mt-auto text-indigo-400 hover:text-indigo-300 font-medium text-left">Lihat Detail &rarr;</button>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card bg-gray-800 p-6 rounded-xl shadow-2xl flex flex-col">
+                    <h3 class="text-xl font-semibold text-white mb-2">Portal Berita Dinamis (Next.js)</h3>
+                    <p class="text-gray-400 mb-4 flex-grow">Portal berita yang menggunakan Next.js (SSR/ISR) untuk performa SEO maksimal, mengambil data dari API internal Laravel.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                         <span class="bg-red-600/20 text-red-400 text-xs px-2 py-1 rounded-full">Next.js</span>
+                         <span class="bg-red-600/20 text-red-400 text-xs px-2 py-1 rounded-full">React</span>
+                         <span class="bg-red-600/20 text-red-400 text-xs px-2 py-1 rounded-full">REST API</span>
+                    </div>
+                    <button onclick="showProjectDetail('Portal Berita', 'Menggunakan arsitektur Headless CMS, di mana konten dikelola di Laravel (API) dan tampilan di-render oleh Next.js.')" class="mt-auto text-indigo-400 hover:text-indigo-300 font-medium text-left">Lihat Detail &rarr;</button>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card bg-gray-800 p-6 rounded-xl shadow-2xl flex flex-col">
+                    <h3 class="text-xl font-semibold text-white mb-2">Sistem Reservasi Klien</h3>
+                    <p class="text-gray-400 mb-4 flex-grow">Aplikasi untuk penjadwalan dan reservasi dengan fitur notifikasi *real-time* menggunakan Laravel Echo.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                         <span class="bg-yellow-600/20 text-yellow-400 text-xs px-2 py-1 rounded-full">Laravel Echo</span>
+                         <span class="bg-yellow-600/20 text-yellow-400 text-xs px-2 py-1 rounded-full">Livewire</span>
+                         <span class="bg-yellow-600/20 text-yellow-400 text-xs px-2 py-1 rounded-full">Redis</span>
+                    </div>
+                    <button onclick="showProjectDetail('Sistem Reservasi', 'Sistem yang memanfaatkan Livewire untuk interaktivitas dan Laravel Echo untuk komunikasi *real-time* antar pengguna.')" class="mt-auto text-indigo-400 hover:text-indigo-300 font-medium text-left">Lihat Detail &rarr;</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (Kontak) -->
+    <section id="contact" class="section-padding bg-gray-900 border-t border-gray-800">
+        <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-white mb-4">Mari Berbicara!</h2>
+            <p class="text-lg text-gray-400 mb-8">Tertarik untuk memulai proyek baru? Aku siap membantu.</p>
+            <div class="space-y-4">
+                <a href="mailto:ari.developer@example.com" class="block w-full px-8 py-3 border border-transparent text-base font-medium rounded-xl text-indigo-900 bg-indigo-400 hover:bg-indigo-300 shadow-xl transition duration-300">
+                    Email: ari.developer@example.com
+                </a>
+                <a href="https://github.com/rian18-ari" target="_blank" class="block w-full px-8 py-3 border border-gray-700 text-base font-medium rounded-xl text-gray-300 hover:bg-gray-700 transition duration-300">
+                    GitHub: /rian18-ari
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0d1117] py-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-gray-500">
+            <p>&copy; 2025 Ari. Dibuat dengan semangat Laravel dan kekuatan Tailwind CSS.</p>
+        </div>
+    </footer>
+
+    <!-- Project Detail Modal (Custom Alert/Modal) -->
+    <div id="project-modal" class="fixed inset-0 bg-black bg-opacity-70 hidden items-center justify-center p-4 z-[99]">
+        <div class="bg-gray-800 p-6 rounded-xl shadow-2xl max-w-lg w-full transform transition-all duration-300 scale-95 opacity-0" id="modal-content">
+            <h3 id="modal-title" class="text-2xl font-bold text-white mb-4"></h3>
+            <p id="modal-description" class="text-gray-300 mb-6"></p>
+            <button onclick="hideProjectDetail()" class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition duration-200">
+                Tutup
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript untuk Interaktivitas -->
+    <script>
+        // Fungsi untuk menampilkan modal detail proyek
+        function showProjectDetail(title, description) {
+            const modal = document.getElementById('project-modal');
+            const modalContent = document.getElementById('modal-content');
+            document.getElementById('modal-title').innerText = title;
+            document.getElementById('modal-description').innerText = description;
+
+            // Tampilkan dan beri efek transisi
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            setTimeout(() => {
+                modalContent.classList.remove('scale-95', 'opacity-0');
+                modalContent.classList.add('scale-100', 'opacity-100');
+            }, 10);
+        }
+
+        // Fungsi untuk menyembunyikan modal detail proyek
+        function hideProjectDetail() {
+            const modal = document.getElementById('project-modal');
+            const modalContent = document.getElementById('modal-content');
+
+            // Sembunyikan dengan efek transisi
+            modalContent.classList.remove('scale-100', 'opacity-100');
+            modalContent.classList.add('scale-95', 'opacity-0');
+
+            setTimeout(() => {
+                modal.classList.remove('flex');
+                modal.classList.add('hidden');
+            }, 300);
+        }
+
+        // Menutup modal jika mengklik di luar konten modal
+        document.getElementById('project-modal').addEventListener('click', function(e) {
+            if (e.target.id === 'project-modal') {
+                hideProjectDetail();
+            }
+        });
+    </script>
+</body>
+</html>
